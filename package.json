@@ -1,0 +1,17 @@
+{
+  "name": "com.florisdev.fsm",
+  "version": "1.0.0",
+  "displayName": "FlorisDeV FSM",
+  "description": "Library with all things finite state machine related",
+  "unity": "2021.3",
+  "unityRelease": "6f1",
+  "author": {
+    "name": "FlorisDeV",
+    "email": "florisdev.me@gmail.com",
+    "url": "https://florisdev.me"
+  },
+  "type": "library",
+  "dependencies": {
+    "com.florisdev.unity-extensions": "1.0.0"
+  }
+}

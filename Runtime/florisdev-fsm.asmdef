@@ -1,0 +1,16 @@
+{
+    "name": "florisdev-fsm",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e949446e970ebd9419106d418b1b26f8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
