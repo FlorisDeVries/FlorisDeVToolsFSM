@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 namespace FlorisDeVToolsFSM
 {
-    public class FiniteStateMachine<TStates, TStateType> where TStateType : BaseState<TStates>
+    public class FiniteStateMachine<TStates, TOwner, TStateType> where TStateType : BaseState<TOwner>
     {
         private readonly Dictionary<TStates, TStateType> _states;
         public TStateType CurrentState { get; private set; }
