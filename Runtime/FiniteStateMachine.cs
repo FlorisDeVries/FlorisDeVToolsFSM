@@ -5,14 +5,14 @@ using UnityEngine.Events;
 
 namespace FlorisDeVToolsFSM
 {
-    public class FiniteStateMachine<TStates, TOwner>
+    public class FiniteStateMachine<TStates, TStateType> where TStateType : BaseState<TStates>
     {
-        private readonly Dictionary<TStates, BaseState<TOwner>> _states;
-        public BaseState<TOwner> CurrentState { get; private set; }
+        private readonly Dictionary<TStates, TStateType> _states;
+        public TStateType CurrentState { get; private set; }
         public TStates ActiveState { get; private set; }
         public UnityAction OnStateChanged = delegate { };
 
-        public FiniteStateMachine(Dictionary<TStates, BaseState<TOwner>> states)
+        public FiniteStateMachine(Dictionary<TStates, TStateType> states)
         {
             _states = states;
         }
