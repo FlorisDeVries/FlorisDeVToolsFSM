@@ -8,7 +8,7 @@ namespace FlorisDeVToolsFSM
     public class FiniteStateMachine<TStates, TOwner>
     {
         private readonly Dictionary<TStates, BaseState<TOwner>> _states;
-        private BaseState<TOwner> CurrentState { get; set; }
+        public BaseState<TOwner> CurrentState { get; private set; }
         public TStates ActiveState { get; private set; }
         public UnityAction OnStateChanged = delegate { };
 
