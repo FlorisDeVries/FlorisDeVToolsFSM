@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace FlorisDeVToolsFSM
 {
-    public abstract class FsmMonobehaviour<TState, TOwner> : BetterMonoBehaviour
+    public abstract class FsmMonobehaviour<TState, TStateType> : BetterMonoBehaviour where TStateType : BaseState<TState>
     {
-        public FiniteStateMachine<TState, TOwner> StateMachine { get; protected set; }
+        public FiniteStateMachine<TState, TStateType> StateMachine { get; protected set; }
         
         protected virtual void OnEnable()
         {
