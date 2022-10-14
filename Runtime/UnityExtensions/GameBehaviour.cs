@@ -63,7 +63,7 @@ namespace FlorisDeVToolsFSM.UnityExtensions
         {
             transform.DORewind();
             transform.DOKill();
-            gameManager.RegisterOnGameStateChanged(OnGameStateChanged);
+            gameManager.DeRegisterOnGameStateChanged(OnGameStateChanged);
         }
 
         protected virtual void OnGameStateChanged()

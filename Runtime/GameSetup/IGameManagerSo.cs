@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace FlorisDeVToolsFSM.GameSetup
 {
@@ -8,6 +9,7 @@ namespace FlorisDeVToolsFSM.GameSetup
         bool IsGamePaused { get; }
         Transform PlayerTransform { get; }
 
-        void RegisterOnGameStateChanged(Action gameStateChanged);
+        void RegisterOnGameStateChanged(UnityAction gameStateChanged);
+        void DeRegisterOnGameStateChanged(UnityAction gameStateChanged);
     }
 }
