@@ -1,9 +1,10 @@
-﻿using FlorisDeVToolsUnityExtensions.HelperFunctions;
+﻿using FlorisDeVToolsFSM.UnityExtensions;
+using FlorisDeVToolsUnityExtensions.HelperFunctions;
 using UnityEngine;
 
 namespace FlorisDeVToolsFSM
 {
-    public abstract class FsmMonobehaviour<TState, TOwner, TStateType> : BetterMonoBehaviour where TStateType : BaseState<TOwner>
+    public abstract class FsmMonobehaviour<TState, TOwner, TStateType> : GameBehaviour where TStateType : BaseState<TOwner>
     {
         public FiniteStateMachine<TState, TOwner, TStateType> StateMachine { get; protected set; }
         

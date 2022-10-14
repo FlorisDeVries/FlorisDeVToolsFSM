@@ -2,7 +2,8 @@
     "name": "florisdev-fsm",
     "rootNamespace": "",
     "references": [
-        "GUID:e949446e970ebd9419106d418b1b26f8"
+        "GUID:e949446e970ebd9419106d418b1b26f8",
+        "GUID:d263cfcb6fe4c8e458b5530d29ee4d1f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
