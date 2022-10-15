@@ -1,4 +1,5 @@
-﻿using FlorisDeVToolsFSM.UnityExtensions;
+﻿using FlorisDeVToolsFSM.Interfaces;
+using FlorisDeVToolsFSM.UnityExtensions;
 using FlorisDeVToolsUnityExtensions.HelperFunctions;
 using UnityEngine;
 
@@ -41,5 +42,6 @@ namespace FlorisDeVToolsFSM
         {
             StateMachine?.OnCollisionEnter2D(other);
         }
+
     }
 }

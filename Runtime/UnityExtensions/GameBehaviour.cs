@@ -1,17 +1,18 @@
 using System.Collections;
 using DG.Tweening;
-using FlorisDeVToolsFSM.GameSetup;
+using FlorisDeVToolsFSM.Enums;
+using FlorisDeVToolsFSM.Interfaces;
 using Sisus.Init;
 using UnityEngine;
 
 namespace FlorisDeVToolsFSM.UnityExtensions
 {
-    public class GameBehaviour : MonoBehaviour<IGameManagerSo>
+    public class GameBehaviour : MonoBehaviour<IGameManagerSo<GameState>>
     {
-        protected IGameManagerSo gameManager;
+        protected IGameManagerSo<GameState> gameManager;
         public bool IsPaused { get; private set; } = false;
         
-        protected override void Init(IGameManagerSo gameManagerSo)
+        protected override void Init(IGameManagerSo<GameState> gameManagerSo)
         {
             gameManager = gameManagerSo;
         }

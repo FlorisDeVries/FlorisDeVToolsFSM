@@ -12,6 +12,6 @@
   },
   "type": "library",
   "dependencies": {
-    "com.florisdev.unity-extensions": "1.0.0"
+    "com.florisdev.unity-extensions": "1.0.1"
   }
 }
