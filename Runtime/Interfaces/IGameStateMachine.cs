@@ -8,5 +8,6 @@ namespace FlorisDeVToolsFSM.Interfaces
 
         void RegisterOnGameStateChanged(UnityAction gameStateChanged);
         void DeRegisterOnGameStateChanged(UnityAction gameStateChanged);
+        void ContinuePlaying();
     }
 }
